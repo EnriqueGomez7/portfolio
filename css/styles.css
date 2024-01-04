@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div[id]{
+    scroll-margin-top: 63px;
+}
+
+header{
+    display: flex;
+    background: #326273;
+    height: 63px;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px #326273,
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+h1 a{
+    display: block;
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+} 
+
+a:hover{
+    color: #E39774;
+}
+
+nav ul{
+    list-style: none;
+    overflow: hidden; 
+}
+
+nav ul li{
+    float: left;
+    font-size: 20px;
+}
+
+nav ul li a{
+    display: block; 
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container_1{
+   height: 900px;
+   background-color: #5C9EAD;
+   display: flex;
+   padding-top: 63px; 
+}
+
+.container_1_seccion_1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_1_seccion_1 img{
+    width: 60%;
+    height: 60%;
+}
+
+.slider {
+	width: 50%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider h1{
+    color: white;
+}
+
+.slider h3{
+    color: white;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+ul li img{
+    height: 400px;
+    width: 400px;
+}
+
+.container_2{
+    height: 875px;
+    background-color: #326273;
+}
+
+.container_2 h1{
+    color: white;
+}
+
+.container_2_cajaproyectos{
+    height: 668px;
+    display: block;
+}
+
+.container_2_cajaproyectos a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.container_2_fila_1{
+    height: 50%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.container_2_fila_2{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_2_caja{
+    width: 517px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+
+.container_2_caja img{
+    height: 100%;
+    width: 100%;
+    overflow:hidden
+}
+
+.container_2_minicaja{
+    height: 25%;
+    background-color: #5C9EAD;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.container_2_caja:hover{
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px #326273,
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    h2{
+        color: #E39774;
+    }
+}
+
+.proyecto1{
+    background-image: url(../img/Real-Talking-Pokemon-Pokedex-640x533.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.proyecto2{
+    background-image: url(../img/D8F781C2-E966-4176-83FB-7C2B7B870FE6.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.proyecto3{
+    background-image: url(../img/Valorant_Cover_Art.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.proyecto4{
+    background-image: url(../img/mejores-razas-gatos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.proyecto5{
+    background-image: url(../img/to-do-list-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.proyecto6{
+    background-image: url(../img//1670142312338.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container_2_minicaja h2{
+    color:#fff;
+}
+
+.container_3{
+    height: 850px;
+    background-color: #5C9EAD;
+}
+
+.container_3_caja_contenidos{
+    height: 668px;
+    display: flex;
+}
+
+.container_3_caja_1{
+    width: 50%;
+}
+
+.container_3_caja_1 img{
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.container_3_caja_2{
+    width: 50%;
+    padding: 30px;
+}
+
+.container_3_pestanas {
+    display: flex;
+    background-color: #5C9EAD;
+}
+
+.container_3_pestanas button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #326273;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.container_3_pestanas button:hover {
+    background-color: #E39774;
+}
+
+.contenido {
+    padding: 20px;
+    display: none;
+}
+
+.contenido h2{
+    color: #fff;
+}
+
+.contenido h4{
+    color:#fff
+}
+
+.contenido img{
+    margin-top: 10px;
+    width: 10%;
+    height: 10%;
+}
+#container_3_seccion1 img{
+    width: 45%;
+    height: 45%;
+}
+
+#container_3_seccion1 {
+    display: block;
+}
+
+.container_4{
+    height: 766px;
+
+    background-color: #326273;
+}
+
+.container_4 h1 {
+    color: #E39774; 
+}
+
+.contacto-formulario {
+    width: 800px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color:#fff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.boton_contacto {
+    background-color: #E39774; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton_contacto:hover {
+    background-color: #5C9EAD; 
+}
+
+footer{
+    height: 84px;
+    display: flex;
+    background-color: #103644;
+    justify-content: space-between;
+    align-items:center;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px #103644,
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+footer h3{
+    color:#fff;
+    padding-left: 20px;
+}
+
+footer img{
+    height: 100%;
+    width: 42px;
+}
+
+footer img:hover{
+    fill: #E39774;
+}
+
+.footer_images{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
