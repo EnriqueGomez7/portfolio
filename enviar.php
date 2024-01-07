@@ -1,22 +1,40 @@
-<?php
-$name = $_POST['name'];
-$mail = $_POST['mail'];
-$message = $_POST['message'];
+<?php 
 
-$header = 'From: ' . $mail . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
+$correo = $_POST['correo'];
+$nombre = $_POST['nombre'];
+$mensaje = $_POST['mensaje'];
 
-$message = "Este mensaje fue enviado por: " . $name . " \r\n";
-$message .= "Su e-mail es: " . $mail . " \r\n";
-$message .= "Mensaje: " . $_POST['message'] . " \r\n";
-$message .= "Enviado el: " . date('d/m/Y', time());
 
-$para = 'enrikus2004@gmail.com';
-$asunto = 'Portfolio';
+//echo $correo . " " . $nombre . " " . $mensaje;
 
-mail($para, $asunto, utf8_decode($message), $header);
 
-header("Location:index.html");
-?>
+$destinatario = "enrikus2004@gmail.com";
+$asunto = "Envio de correo de prueba con PHP"; 
+$cuerpo = '
+    <html> 
+        <head> 
+            <title>Prueba de envio de correo</title> 
+        </head>
+
+        <body> 
+            <h1>Solicitud de contacto desde correo de prueba !  </h1>
+            <p> 
+                Contacto:  '.$nombre . ' - ' . $asunto .'  <br>
+                Mensaje: '.$mensaje.' 
+            </p> 
+        </body>
+    </html>
+';
+//para el envío en formato HTML 
+$headers = "MIME-Version: 1.0\r\n"; 
+$headers .= "Content-type: text/html; charset=UTF8\r\n"; 
+
+//dirección del remitente
+
+$headers .= "FROM: $nombre <$correo>\r\n";
+mail($destinatario,$asunto,$cuerpo,$headers);
+
+echo "Correo enviado"; 
+?> 
+
+<a href="index.html">Volver a inicio</a>
