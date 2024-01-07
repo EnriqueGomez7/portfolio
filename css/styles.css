@@ -345,6 +345,11 @@ textarea {
     cursor: pointer;
 }
 
+.boton_contacto a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .boton_contacto:hover {
     background-color: #5C9EAD; 
 }
