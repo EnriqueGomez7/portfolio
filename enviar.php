@@ -1,40 +1,32 @@
-<?php 
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    $nombre = $_POST["nombre"];
+    $correo = $_POST["correo"];
+    $mensaje = $_POST["mensaje"];
 
-$correo = $_POST['correo'];
-$nombre = $_POST['nombre'];
-$mensaje = $_POST['mensaje'];
+    
+    $destinatario = "enrikus2004@gmail.com"; 
+    $asunto = "Nuevo mensaje de contacto desde el sitio web";
 
+    
+    $cuerpoMensaje = "Nombre: $nombre\n";
+    $cuerpoMensaje .= "Correo electrónico: $correo\n\n";
+    $cuerpoMensaje .= "Mensaje:\n$mensaje";
 
-//echo $correo . " " . $nombre . " " . $mensaje;
+    
+    $cabeceras = "From: $correo\r\n";
+    $cabeceras .= "Reply-To: $correo\r\n";
 
-
-$destinatario = "enrikus2004@gmail.com";
-$asunto = "Envio de correo de prueba con PHP"; 
-$cuerpo = '
-    <html> 
-        <head> 
-            <title>Prueba de envio de correo</title> 
-        </head>
-
-        <body> 
-            <h1>Solicitud de contacto desde correo de prueba !  </h1>
-            <p> 
-                Contacto:  '.$nombre . ' - ' . $asunto .'  <br>
-                Mensaje: '.$mensaje.' 
-            </p> 
-        </body>
-    </html>
-';
-//para el envío en formato HTML 
-$headers = "MIME-Version: 1.0\r\n"; 
-$headers .= "Content-type: text/html; charset=UTF8\r\n"; 
-
-//dirección del remitente
-
-$headers .= "FROM: $nombre <$correo>\r\n";
-mail($destinatario,$asunto,$cuerpo,$headers);
-
-echo "Correo enviado"; 
-?> 
-
-<a href="index.html">Volver a inicio</a>
+    
+    if (mail($destinatario, $asunto, $cuerpoMensaje, $cabeceras)) {
+        echo "¡Mensaje enviado con éxito!";
+    } else {
+        echo "Error al enviar el mensaje. Por favor, inténtalo de nuevo.";
+    }
+} else {
+    
+    header("Location: index.html");
+    exit();
+}
+?>
