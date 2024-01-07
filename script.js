@@ -7,3 +7,8 @@ function mostrarContenido(id) {
     document.getElementById(id).style.display = 'block';
     
 }
+
+function toggleMenu() {
+    var nav = document.querySelector('nav ul');
+    nav.classList.toggle('active');
+}

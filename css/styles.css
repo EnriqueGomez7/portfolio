@@ -21,6 +21,12 @@ header{
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+
 h1 a{
     display: block;
     font-size: 20px;
@@ -35,16 +41,21 @@ a:hover{
 
 nav ul{
     list-style: none;
-    overflow: hidden; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: ;  /* Cambia a una disposición vertical en versiones móviles */
+    width: 100%;
 }
 
 nav ul li{
-    float: left;
+    float: none;
     font-size: 20px;
+    margin-bottom: 5px;  /* Espacio entre elementos en versiones móviles */
+
 }
 
 nav ul li a{
-    display: block; 
+    display: block;
     padding: 20px;
     color: #fff;
     text-decoration: none;
@@ -369,4 +380,110 @@ footer img:hover{
     width: 200px;
     display: flex;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        padding: 20px;
+        order: -1;  /* Mueve el icono del menú arriba */
+    }
+
+    header {
+        height: auto;
+        flex-direction: column;
+    }
+
+    h1 a {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .container_1 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container_1_seccion_1{
+        width: 100%;
+        
+    }
+
+    .container_1_seccion_1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider {
+        width: 100%;
+        padding: 10px;
+    } 
+
+    .slider h1, .slider h3 {
+        font-size: 16px;
+    }
+
+    ul li img {
+        height: auto;
+        width: 100%;
+    }
+
+    .container_2 {
+        height: auto;
+    }
+
+    .container_2_caja {
+        width: 100%;
+    }
+
+    .container_3 {
+        height: auto;
+    }
+
+    .container_3_caja_1 {
+        display: none;
+    }
+
+    .container_3_caja_2 {
+        width: 100%;
+       padding: 1px
+    }
+
+    .container_4 {
+        height: auto;
+    }
+
+    .contacto-formulario {
+        width: 100%;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer h3 {
+        padding: 10px;
+    }
+
+    .footer_images {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
 }
