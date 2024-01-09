@@ -303,6 +303,11 @@ ul li img{
     display: block;
 }
 
+#container_3_seccion1 button {
+    margin-top: 200px;
+    
+}
+
 .container_3_bloques{
     width: 100%;
     margin-top: 30px;
