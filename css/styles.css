@@ -188,7 +188,8 @@ ul li img{
 .container_2_minicaja{
     height: 25%;
     background-color: #5C9EAD;
-    border-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     display: flex;
     align-items: center;
     padding: 30px;
@@ -364,7 +365,7 @@ textarea {
 }
 
 .boton_contacto:hover {
-    background-color: #5C9EAD; 
+    background-color: #326273; 
 }
 
 footer{
@@ -470,6 +471,10 @@ footer img:hover{
         width: 100%;
         height: 20%;
         background-color: #326273;
+    }
+
+    .container_2_minicaja{
+        border-radius: 40px;
     }
 
     .container_2_cajaproyectos {
