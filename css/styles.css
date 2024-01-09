@@ -8,6 +8,10 @@ div[id]{
     scroll-margin-top: 63px;
 }
 
+h1{
+    color: #fff;
+}
+
 header{
     display: flex;
     background: #326273;
@@ -64,23 +68,20 @@ nav ul li a{
    height: 900px;
    background-color: #5C9EAD;
    display: flex;
+   flex-direction: column;
    padding-top: 63px; 
 }
 
 .container_1_seccion_1{
-    width: 50%;
+    margin-top: 30px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container_1_seccion_1 img{
-    width: 60%;
-    height: 60%;
-}
-
 .slider {
-	width: 50%;
+	width: 80%;
 	margin: auto;
 	overflow: hidden;
 }
@@ -127,6 +128,7 @@ ul li img{
 
 .container_2{
     height: 875px;
+    padding: 50px;
     background-color: #326273;
 }
 
@@ -236,21 +238,12 @@ ul li img{
 .container_3{
     height: 850px;
     background-color: #5C9EAD;
+    padding: 50px;
 }
 
 .container_3_caja_contenidos{
     height: 668px;
-    display: flex;
-}
-
-.container_3_caja_1{
-    width: 50%;
-}
-
-.container_3_caja_1 img{
-    width: 100%;
-    height: 100%;
-    padding: 30px;
+    margin-top: 40px;
 }
 
 .container_3_caja_2{
@@ -291,11 +284,7 @@ ul li img{
     color:#fff
 }
 
-.contenido img{
-    margin-top: 10px;
-    width: 10%;
-    height: 10%;
-}
+
 #container_3_seccion1 img{
     width: 45%;
     height: 45%;
@@ -305,14 +294,24 @@ ul li img{
     display: block;
 }
 
+.container_3_bloques{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
 .container_4{
+    padding: 40px;
     height: 766px;
 
     background-color: #326273;
 }
 
 .container_4 h1 {
-    color: #E39774; 
+    color: #fff; 
 }
 
 .contacto-formulario {
