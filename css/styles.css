@@ -541,6 +541,18 @@ footer img:hover{
         height: 1000px;
     }
 
+    .container_3_pestanas{
+        flex-wrap: wrap;
+    }
+
+    .container_3 img{
+        width: 25%;
+    }
+
+    #container_3_bloques{
+        display: block;
+    }
+
     .container_4 {
         height: auto;
     }
