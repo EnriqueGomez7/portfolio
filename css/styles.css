@@ -538,7 +538,8 @@ footer img:hover{
     }
 
     .container_3 img{
-        width: 60%;
+        width: 70px;
+        height: 70px;
         margin-top: 10px;
     }
 
@@ -563,7 +564,8 @@ footer img:hover{
     }
 
     .container_3_seccion3_bloques img{
-        width: 50%;
+        width: 70px;
+        height: 70px;
     }
 
     .container_4 {
