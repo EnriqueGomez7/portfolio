@@ -295,14 +295,6 @@ ul li img{
 }
 
 
-#container_3_seccion1 img{
-    width: 45%;
-    height: 45%;
-}
-
-#container_3_seccion1 {
-    display: block;
-}
 
 #container_3_seccion1 button {
     margin-top: 200px;
@@ -546,11 +538,32 @@ footer img:hover{
     }
 
     .container_3 img{
-        width: 25%;
+        width: 60%;
+        margin-top: 10px;
     }
 
-    #container_3_bloques{
-        display: block;
+   .container_3_seccion2_bloques{
+        display: flex;
+   }
+
+   .container_3_seccion2_bloques div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_3_seccion3_bloques{
+        display: flex;
+    }
+
+   .container_3_seccion3_bloques div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_3_seccion3_bloques img{
+        width: 50%;
     }
 
     .container_4 {
