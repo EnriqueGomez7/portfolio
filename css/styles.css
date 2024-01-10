@@ -309,6 +309,14 @@ ul li img{
     
 }
 
+.container_3_caja_contenidos img{
+    border-radius: 10px;
+}
+
+.container_3_caja_contenidos img:hover{
+    transform: scale(1.1);
+}
+
 .container_3_bloques{
     width: 100%;
     margin-top: 30px;
@@ -316,7 +324,23 @@ ul li img{
     justify-content: space-around;
 }
 
+.boton{
+    background-color: #E39774; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+.boton a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.cv:hover {
+    background-color: #326273; 
+}
 
 .container_4{
     padding: 40px;
@@ -359,13 +383,13 @@ textarea {
     cursor: pointer;
 }
 
-.boton_contacto a{
+.contacto a{
     text-decoration: none;
     color: inherit;
 }
 
-.boton_contacto:hover {
-    background-color: #326273; 
+.contacto:hover {
+    background-color: #5C9EAD; 
 }
 
 footer{
