@@ -538,16 +538,7 @@ footer img:hover{
     }
 
     .container_3 {
-        height: auto;
-    }
-
-    .container_3_caja_1 {
-        display: none;
-    }
-
-    .container_3_caja_2 {
-        width: 100%;
-       padding: 1px
+        height: 1000px;
     }
 
     .container_4 {
